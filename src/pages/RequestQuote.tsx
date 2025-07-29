@@ -79,14 +79,14 @@ export const RequestQuote = () => {
         aria-hidden="true"
       ></div>
       <div className="absolute inset-0 -z-10 bg-black/60" aria-hidden="true" />
-      <div className="py-20">
+      <div className="py-12 sm:py-16 lg:py-20">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center mb-12 text-white">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">
+        <div className="text-center mb-8 sm:mb-10 lg:mb-12 text-white">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6">
             {language === 'en' ? 'Request a Quote' : 'طلب عرض سعر'}
           </h1>
-          <p className="text-xl text-gray-200 leading-relaxed">
+          <p className="text-lg sm:text-xl text-gray-200 leading-relaxed px-4">
             {language === 'en'
               ? 'Fill out the form below and we will design a customized tour program that suits your needs and budget'
               : 'املأ النموذج أدناه وسنقوم بتصميم برنامج سياحي مخصص يناسب احتياجاتك وميزانيتك'}
@@ -94,17 +94,17 @@ export const RequestQuote = () => {
         </div>
 
         {/* Form */}
-        <form onSubmit={handleSubmit} className="bg-white rounded-2xl shadow-xl p-8 md:p-12">
+        <form onSubmit={handleSubmit} className="bg-white rounded-2xl shadow-xl p-6 sm:p-8 lg:p-12">
           {/* Personal Information */}
-          <div className="mb-12">
-            <h2 className="text-2xl font-bold text-green-800 mb-6 flex items-center">
-              <Users className="h-6 w-6 ml-3 text-yellow-600" />
+          <div className="mb-8 sm:mb-10 lg:mb-12">
+            <h2 className="text-xl sm:text-2xl font-bold text-green-800 mb-4 sm:mb-6 flex items-center">
+              <Users className="h-5 w-5 sm:h-6 sm:w-6 ml-2 sm:ml-3 text-yellow-600" />
               {language === 'en' ? 'Personal Information' : 'المعلومات الشخصية'}
             </h2>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
+                <label className="block text-sm font-medium text-gray-700 mb-1 sm:mb-2">
                   {language === 'en' ? 'Name' : 'الاسم'} *
                 </label>
                 <input
@@ -113,13 +113,13 @@ export const RequestQuote = () => {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-colors"
+                  className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-colors text-sm sm:text-base"
                   placeholder={language === 'en' ? 'Your Full Name' : 'اسمك الكامل'}
                 />
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
+                <label className="block text-sm font-medium text-gray-700 mb-1 sm:mb-2">
                   {language === 'en' ? 'Email Address' : 'البريد الإلكتروني'} *
                 </label>
                 <input
@@ -128,13 +128,13 @@ export const RequestQuote = () => {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-colors"
+                  className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-colors text-sm sm:text-base"
                   placeholder="your@email.com"
                 />
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
+                <label className="block text-sm font-medium text-gray-700 mb-1 sm:mb-2">
                   {language === 'en' ? 'Phone Number' : 'رقم الهاتف'} *
                 </label>
                 <input
@@ -143,13 +143,13 @@ export const RequestQuote = () => {
                   value={formData.phone}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-colors"
+                  className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-colors text-sm sm:text-base"
                   placeholder="+966 50 123 4567"
                 />
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
+                <label className="block text-sm font-medium text-gray-700 mb-1 sm:mb-2">
                   {language === 'en' ? 'Nationality' : 'الجنسية'}
                 </label>
                 <input
@@ -157,7 +157,7 @@ export const RequestQuote = () => {
                   name="nationality"
                   value={formData.nationality}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-colors"
+                  className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-colors text-sm sm:text-base"
                   placeholder={language === 'en' ? 'Saudi Arabia, UAE, etc.' : 'السعودية، الإمارات، إلخ...'}
                 />
               </div>
@@ -165,15 +165,15 @@ export const RequestQuote = () => {
           </div>
 
           {/* Trip Details */}
-          <div className="mb-12">
-            <h2 className="text-2xl font-bold text-green-800 mb-6 flex items-center">
-              <Calendar className="h-6 w-6 ml-3 text-yellow-600" />
+          <div className="mb-8 sm:mb-10 lg:mb-12">
+            <h2 className="text-xl sm:text-2xl font-bold text-green-800 mb-4 sm:mb-6 flex items-center">
+              <Calendar className="h-5 w-5 sm:h-6 sm:w-6 ml-2 sm:ml-3 text-yellow-600" />
               {language === 'en' ? 'Trip Details' : 'تفاصيل الرحلة'}
             </h2>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 mb-4 sm:mb-6">
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
+                <label className="block text-sm font-medium text-gray-700 mb-1 sm:mb-2">
                   {language === 'en' ? 'Group Size' : 'حجم المجموعة'} *
                 </label>
                 <select
@@ -181,7 +181,7 @@ export const RequestQuote = () => {
                   value={formData.groupSize}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-colors"
+                  className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-colors text-sm sm:text-base"
                 >
                   <option value="">{language === 'en' ? 'Select Group Size' : 'اختر حجم المجموعة'}</option>
                   <option value="1">{language === 'en' ? '1 Person' : 'شخص واحد'}</option>
@@ -194,14 +194,14 @@ export const RequestQuote = () => {
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
+                <label className="block text-sm font-medium text-gray-700 mb-1 sm:mb-2">
                   {language === 'en' ? 'Budget' : 'الميزانية'} (USD)
                 </label>
                 <select
                   name="budget"
                   value={formData.budget}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-colors"
+                  className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-colors text-sm sm:text-base"
                 >
                   <option value="">{language === 'en' ? 'Select Budget Range' : 'اختر نطاق الميزانية'}</option>
                   <option value="1000-2000">$1,000 - $2,000</option>
@@ -213,7 +213,7 @@ export const RequestQuote = () => {
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
+                <label className="block text-sm font-medium text-gray-700 mb-1 sm:mb-2">
                   {language === 'en' ? 'Start Date' : 'تاريخ البداية'} *
                 </label>
                 <input
@@ -222,12 +222,12 @@ export const RequestQuote = () => {
                   value={formData.startDate}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-colors"
+                  className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-colors text-sm sm:text-base"
                 />
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
+                <label className="block text-sm font-medium text-gray-700 mb-1 sm:mb-2">
                   {language === 'en' ? 'End Date' : 'تاريخ النهاية'} *
                 </label>
                 <input
@@ -236,20 +236,20 @@ export const RequestQuote = () => {
                   value={formData.endDate}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-colors"
+                  className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-colors text-sm sm:text-base"
                 />
               </div>
             </div>
 
-            <div className="mb-6">
-              <label className="block text-sm font-medium text-gray-700 mb-2">
+            <div className="mb-4 sm:mb-6">
+              <label className="block text-sm font-medium text-gray-700 mb-1 sm:mb-2">
                 {language === 'en' ? 'Preferred Accommodation Type' : 'نوع الإقامة المفضل'}
               </label>
               <select
                 name="accommodation"
                 value={formData.accommodation}
                 onChange={handleChange}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-colors"
+                className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-colors text-sm sm:text-base"
               >
                 <option value="">{language === 'en' ? 'Select Accommodation Type' : 'اختر نوع الإقامة'}</option>
                 <option value="luxury">{language === 'en' ? 'Luxury Hotels & Resorts (5-star)' : 'فنادق ومنتجعات فاخرة (5 نجوم)'}</option>
@@ -260,15 +260,15 @@ export const RequestQuote = () => {
               </select>
             </div>
 
-            <div className="mb-6">
-              <label className="block text-sm font-medium text-gray-700 mb-2">
+            <div className="mb-4 sm:mb-6">
+              <label className="block text-sm font-medium text-gray-700 mb-1 sm:mb-2">
                 {language === 'en' ? 'Previous Safari Experience' : 'خبرتك السابقة في السفاري'}
               </label>
               <select
                 name="experience"
                 value={formData.experience}
                 onChange={handleChange}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-colors"
+                className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-colors text-sm sm:text-base"
               >
                 <option value="">{language === 'en' ? 'Select Experience Level' : 'اختر مستوى الخبرة'}</option>
                 <option value="first-time">{language === 'en' ? 'First Time' : 'أول مرة'}</option>
@@ -280,15 +280,15 @@ export const RequestQuote = () => {
           </div>
 
           {/* Destinations */}
-          <div className="mb-12">
-            <h2 className="text-2xl font-bold text-green-800 mb-6 flex items-center">
-              <MapPin className="h-6 w-6 ml-3 text-yellow-600" />
+          <div className="mb-8 sm:mb-10 lg:mb-12">
+            <h2 className="text-xl sm:text-2xl font-bold text-green-800 mb-4 sm:mb-6 flex items-center">
+              <MapPin className="h-5 w-5 sm:h-6 sm:w-6 ml-2 sm:ml-3 text-yellow-600" />
               {language === 'en' ? 'Desired Destinations' : 'الوجهات المرغوبة'}
             </h2>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
               {destinations.map((destination) => (
-                <label key={destination.id} className="flex items-center space-x-3 rtl:space-x-reverse p-3 rounded-lg hover:bg-gray-50 cursor-pointer">
+                <label key={destination.id} className="flex items-center space-x-2 sm:space-x-3 rtl:space-x-reverse p-2 sm:p-3 rounded-lg hover:bg-gray-50 cursor-pointer">
                   <input
                     type="checkbox"
                     name="destinations"
@@ -296,22 +296,22 @@ export const RequestQuote = () => {
                     onChange={handleChange}
                     className="w-4 h-4 text-green-600 bg-gray-100 border-gray-300 rounded focus:ring-green-500"
                   />
-                  <span className="text-gray-700">{destination.name}</span>
+                  <span className="text-gray-700 text-sm sm:text-base">{destination.name}</span>
                 </label>
               ))}
             </div>
           </div>
 
           {/* Interests */}
-          <div className="mb-12">
-            <h2 className="text-2xl font-bold text-green-800 mb-6 flex items-center">
-              <Clock className="h-6 w-6 ml-3 text-yellow-600" />
+          <div className="mb-8 sm:mb-10 lg:mb-12">
+            <h2 className="text-xl sm:text-2xl font-bold text-green-800 mb-4 sm:mb-6 flex items-center">
+              <Clock className="h-5 w-5 sm:h-6 sm:w-6 ml-2 sm:ml-3 text-yellow-600" />
               {language === 'en' ? 'Interests' : 'الاهتمامات'}
             </h2>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
               {interests.map((interest) => (
-                <label key={interest.id} className="flex items-center space-x-3 rtl:space-x-reverse p-3 rounded-lg hover:bg-gray-50 cursor-pointer">
+                <label key={interest.id} className="flex items-center space-x-2 sm:space-x-3 rtl:space-x-reverse p-2 sm:p-3 rounded-lg hover:bg-gray-50 cursor-pointer">
                   <input
                     type="checkbox"
                     name="interests"
@@ -319,21 +319,21 @@ export const RequestQuote = () => {
                     onChange={handleChange}
                     className="w-4 h-4 text-green-600 bg-gray-100 border-gray-300 rounded focus:ring-green-500"
                   />
-                  <span className="text-gray-700">{interest.name}</span>
+                  <span className="text-gray-700 text-sm sm:text-base">{interest.name}</span>
                 </label>
               ))}
             </div>
           </div>
 
           {/* Special Requests */}
-          <div className="mb-8">
-            <h2 className="text-2xl font-bold text-green-800 mb-6">{language === 'en' ? 'Special Requests' : 'طلبات خاصة'}</h2>
+          <div className="mb-6 sm:mb-8">
+            <h2 className="text-xl sm:text-2xl font-bold text-green-800 mb-4 sm:mb-6">{language === 'en' ? 'Special Requests' : 'طلبات خاصة'}</h2>
             <textarea
               name="specialRequests"
               value={formData.specialRequests}
               onChange={handleChange}
-              rows={5}
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-colors resize-none"
+              rows={4}
+              className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-colors resize-none text-sm sm:text-base"
               placeholder={language === 'en' ? 'Tell us about any special requests, dietary restrictions, medical needs, or other preferences...' : 'أخبرنا عن أي طلبات خاصة، قيود غذائية، احتياجات طبية، أو تفضيلات أخرى...'}
             />
           </div>
@@ -341,37 +341,37 @@ export const RequestQuote = () => {
           {/* Submit Button */}
           <button
             type="submit"
-            className="w-full bg-gradient-to-r from-green-600 to-green-700 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:from-green-700 hover:to-green-800 transition-all transform hover:scale-105 flex items-center justify-center"
+            className="w-full bg-gradient-to-r from-green-600 to-green-700 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-semibold hover:from-green-700 hover:to-green-800 transition-all transform hover:scale-105 flex items-center justify-center"
           >
-            <Send className="h-5 w-5 mr-2" />
+            <Send className="h-4 w-4 sm:h-5 sm:w-5 mr-2" />
             {language === 'en' ? 'Submit Quote Request' : 'إرسال طلب العرض'}
           </button>
 
-          <p className="text-center text-sm text-gray-500 mt-4">
+          <p className="text-center text-xs sm:text-sm text-gray-500 mt-3 sm:mt-4">
             {language === 'en' ? '* We will respond to your request within 24 hours with a detailed and customized itinerary' : '* سنقوم بالرد على طلبك خلال 24 ساعة مع عرض مفصل ومخصص لرحلتك'}
           </p>
         </form>
 
         {/* Additional Info */}
-        <div className="mt-12 bg-black/20 backdrop-blur-sm rounded-2xl p-8 text-white text-center">
-          <h3 className="text-2xl font-bold mb-4">
+        <div className="mt-8 sm:mt-10 lg:mt-12 bg-black/20 backdrop-blur-sm rounded-2xl p-6 sm:p-8 text-white text-center">
+          <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">
             {language === 'en' ? 'Excellent Customer Service' : 'خدمة عملاء متميزة'}
           </h3>
-          <p className="text-lg mb-6">
+          <p className="text-base sm:text-lg mb-4 sm:mb-6 px-4">
             {language === 'en' ? 'Our team of experts is ready to assist you every step of the way in planning your trip' : 'فريق خبرائنا جاهز لمساعدتك في كل خطوة من خطوات التخطيط لرحلتك'}
           </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
+          <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4">
             <a
               href="https://wa.me/254712346678"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-white text-yellow-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors"
+              className="bg-white text-yellow-600 px-4 sm:px-6 py-2 sm:py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors text-sm sm:text-base"
             >
               WhatsApp: +254 712 346 678
             </a>
             <a
               href="tel:+254712346678"
-              className="bg-green-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-green-700 transition-colors"
+              className="bg-green-600 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-full font-semibold hover:bg-green-700 transition-colors text-sm sm:text-base"
             >
               {language === 'en' ? 'Call Now' : 'اتصل الآن'}
             </a>

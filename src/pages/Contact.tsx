@@ -53,91 +53,91 @@ export const Contact = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
           {/* Contact Information */}
-          <div className="space-y-8">
-            <div className="bg-white rounded-2xl shadow-xl p-6 sm:p-8">
-              <h2 className="text-2xl sm:text-3xl font-bold text-green-800 mb-6 sm:mb-8">{language === 'en' ? 'Contact Information' : 'معلومات التواصل'}</h2>
+          <div className="space-y-6 lg:space-y-8">
+            <div className="bg-white rounded-2xl shadow-xl p-4 sm:p-6 lg:p-8">
+              <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-green-800 mb-4 sm:mb-6 lg:mb-8">{language === 'en' ? 'Contact Information' : 'معلومات التواصل'}</h2>
               
-              <div className="space-y-6">
-                <div className="flex items-start space-x-3 sm:space-x-4 rtl:space-x-reverse">
-                  <div className="bg-green-100 p-2 sm:p-3 rounded-full flex-shrink-0">
-                    <Phone className="h-5 w-5 sm:h-6 sm:w-6 text-green-600" />
+              <div className="space-y-4 sm:space-y-6">
+                <div className="flex items-start space-x-3 rtl:space-x-reverse">
+                  <div className="bg-green-100 p-2 rounded-full flex-shrink-0">
+                    <Phone className="h-4 w-4 sm:h-5 sm:w-5 lg:h-6 lg:w-6 text-green-600" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-900 mb-1 text-sm sm:text-base">{language === 'en' ? 'Phone' : 'الهاتف'}</h3>
-                    <p className="text-gray-600 text-sm sm:text-base">+254 712 346 678</p>
-                    <p className="text-sm text-gray-500">{language === 'en' ? 'Available 24/7' : 'متاح 24/7'}</p>
+                    <h3 className="font-semibold text-gray-900 mb-1 text-sm lg:text-base">{language === 'en' ? 'Phone' : 'الهاتف'}</h3>
+                    <p className="text-gray-600 text-sm lg:text-base">+254 712 346 678</p>
+                    <p className="text-xs sm:text-sm text-gray-500">{language === 'en' ? 'Available 24/7' : 'متاح 24/7'}</p>
                   </div>
                 </div>
 
-                <div className="flex items-start space-x-3 sm:space-x-4 rtl:space-x-reverse">
-                  <div className="bg-yellow-100 p-2 sm:p-3 rounded-full flex-shrink-0">
-                    <Mail className="h-5 w-5 sm:h-6 sm:w-6 text-yellow-600" />
+                <div className="flex items-start space-x-3 rtl:space-x-reverse">
+                  <div className="bg-yellow-100 p-2 rounded-full flex-shrink-0">
+                    <Mail className="h-4 w-4 sm:h-5 sm:w-5 lg:h-6 lg:w-6 text-yellow-600" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-900 mb-1 text-sm sm:text-base">{language === 'en' ? 'Email' : 'البريد الإلكتروني'}</h3>
-                    <p className="text-gray-600 text-sm sm:text-base break-all">info@injaazagency.com</p>
-                    <p className="text-sm text-gray-500">{language === 'en' ? 'Quick response within 24 hours' : 'رد سريع خلال 24 ساعة'}</p>
+                    <h3 className="font-semibold text-gray-900 mb-1 text-sm lg:text-base">{language === 'en' ? 'Email' : 'البريد الإلكتروني'}</h3>
+                    <p className="text-gray-600 text-sm lg:text-base break-all">info@injaazagency.com</p>
+                    <p className="text-xs sm:text-sm text-gray-500">{language === 'en' ? 'Quick response within 24 hours' : 'رد سريع خلال 24 ساعة'}</p>
                   </div>
                 </div>
 
-                <div className="flex items-start space-x-3 sm:space-x-4 rtl:space-x-reverse">
-                  <div className="bg-blue-100 p-2 sm:p-3 rounded-full flex-shrink-0">
-                    <MapPin className="h-5 w-5 sm:h-6 sm:w-6 text-blue-600" />
+                <div className="flex items-start space-x-3 rtl:space-x-reverse">
+                  <div className="bg-blue-100 p-2 rounded-full flex-shrink-0">
+                    <MapPin className="h-4 w-4 sm:h-5 sm:w-5 lg:h-6 lg:w-6 text-blue-600" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-900 mb-1 text-sm sm:text-base">{language === 'en' ? 'Address' : 'العنوان'}</h3>
-                    <p className="text-gray-600 text-sm sm:text-base">{language === 'en' ? 'Nairobi, Kenya' : 'نيروبي، كينيا'}</p>
-                    <p className="text-sm text-gray-500">{language === 'en' ? 'Office in the city center' : 'مكتب في قلب المدينة'}</p>
+                    <h3 className="font-semibold text-gray-900 mb-1 text-sm lg:text-base">{language === 'en' ? 'Address' : 'العنوان'}</h3>
+                    <p className="text-gray-600 text-sm lg:text-base">{language === 'en' ? 'Nairobi, Kenya' : 'نيروبي، كينيا'}</p>
+                    <p className="text-xs sm:text-sm text-gray-500">{language === 'en' ? 'Office in the city center' : 'مكتب في قلب المدينة'}</p>
                   </div>
                 </div>
 
-                <div className="flex items-start space-x-3 sm:space-x-4 rtl:space-x-reverse">
-                  <div className="bg-purple-100 p-2 sm:p-3 rounded-full flex-shrink-0">
-                    <Clock className="h-5 w-5 sm:h-6 sm:w-6 text-purple-600" />
+                <div className="flex items-start space-x-3 rtl:space-x-reverse">
+                  <div className="bg-purple-100 p-2 rounded-full flex-shrink-0">
+                    <Clock className="h-4 w-4 sm:h-5 sm:w-5 lg:h-6 lg:w-6 text-purple-600" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-900 mb-1 text-sm sm:text-base">{language === 'en' ? 'Working Hours' : 'ساعات العمل'}</h3>
-                    <p className="text-gray-600 text-sm sm:text-base">{language === 'en' ? 'Monday - Friday: 8:00 - 18:00' : 'الاثنين - الجمعة: 8:00 - 18:00'}</p>
-                    <p className="text-gray-600 text-sm sm:text-base">{language === 'en' ? 'Saturday - Sunday: 9:00 - 16:00' : 'السبت - الأحد: 9:00 - 16:00'}</p>
+                    <h3 className="font-semibold text-gray-900 mb-1 text-sm lg:text-base">{language === 'en' ? 'Working Hours' : 'ساعات العمل'}</h3>
+                    <p className="text-gray-600 text-sm lg:text-base">{language === 'en' ? 'Monday - Friday: 8:00 - 18:00' : 'الاثنين - الجمعة: 8:00 - 18:00'}</p>
+                    <p className="text-gray-600 text-sm lg:text-base">{language === 'en' ? 'Saturday - Sunday: 9:00 - 16:00' : 'السبت - الأحد: 9:00 - 16:00'}</p>
                   </div>
                 </div>
               </div>
 
               {/* WhatsApp Button */}
-              <div className="mt-6 sm:mt-8 pt-4 sm:pt-6 border-t border-gray-200">
+              <div className="mt-4 sm:mt-6 lg:mt-8 pt-4 sm:pt-6 border-t border-gray-200">
                 <a
                   href="https://wa.me/254712346678"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center bg-green-500 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-full hover:bg-green-600 transition-colors text-sm sm:text-base"
+                  className="flex items-center justify-center bg-green-500 text-white px-4 py-2 sm:py-3 rounded-full hover:bg-green-600 transition-colors text-sm"
                 >
-                  <MessageSquare className="h-4 w-4 sm:h-5 sm:w-5 mr-2" />
+                  <MessageSquare className="h-4 w-4 mr-2" />
                   {language === 'en' ? 'Message us on WhatsApp' : 'راسلنا على WhatsApp'}
                 </a>
               </div>
             </div>
 
             {/* Google Map Placeholder */}
-            <div className="bg-white rounded-2xl shadow-xl p-6 sm:p-8">
-              <h3 className="text-lg sm:text-xl font-bold text-green-800 mb-3 sm:mb-4">{language === 'en' ? 'Our Location' : 'موقعنا'}</h3>
-              <div className="bg-gray-200 rounded-lg h-48 sm:h-64 flex items-center justify-center">
+            <div className="bg-white rounded-2xl shadow-xl p-4 sm:p-6 lg:p-8">
+              <h3 className="text-base sm:text-lg lg:text-xl font-bold text-green-800 mb-3 lg:mb-4">{language === 'en' ? 'Our Location' : 'موقعنا'}</h3>
+              <div className="bg-gray-200 rounded-lg h-40 sm:h-48 lg:h-64 flex items-center justify-center">
                 <div className="text-center text-gray-500">
-                  <MapPin className="h-8 w-8 sm:h-12 sm:w-12 mx-auto mb-2" />
-                  <p className="text-sm sm:text-base">{language === 'en' ? 'Google Map - Nairobi, Kenya' : 'خريطة Google - نيروبي، كينيا'}</p>
-                  <p className="text-sm">{language === 'en' ? '(Interactive map will be added)' : '(سيتم إضافة الخريطة التفاعلية)'}</p>
+                  <MapPin className="h-6 w-6 sm:h-8 sm:w-8 lg:h-12 lg:w-12 mx-auto mb-2" />
+                  <p className="text-xs sm:text-sm lg:text-base">{language === 'en' ? 'Google Map - Nairobi, Kenya' : 'خريطة Google - نيروبي، كينيا'}</p>
+                  <p className="text-xs sm:text-sm">{language === 'en' ? '(Interactive map will be added)' : '(سيتم إضافة الخريطة التفاعلية)'}</p>
                 </div>
               </div>
             </div>
           </div>
 
           {/* Contact Form */}
-          <div className="bg-white rounded-2xl shadow-xl p-6 sm:p-8">
-            <h2 className="text-2xl sm:text-3xl font-bold text-green-800 mb-6 sm:mb-8">{language === 'en' ? 'Send us a Message' : 'أرسل لنا رسالة'}</h2>
+          <div className="bg-white rounded-2xl shadow-xl p-4 sm:p-6 lg:p-8">
+            <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-green-800 mb-4 sm:mb-6 lg:mb-8">{language === 'en' ? 'Send us a Message' : 'أرسل لنا رسالة'}</h2>
             
-            <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
+            <form onSubmit={handleSubmit} className="space-y-4 lg:space-y-6">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6">
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1 sm:mb-2">
+                  <label className="block text-sm font-medium text-gray-700 mb-1 lg:mb-2">
                     {language === 'en' ? 'Name' : 'الاسم'} *
                   </label>
                   <input
@@ -146,13 +146,13 @@ export const Contact = () => {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-colors text-sm sm:text-base"
+                    className="w-full px-3 py-2 sm:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-colors text-sm"
                     placeholder={language === 'en' ? 'Your Full Name' : 'اسمك الكامل'}
                   />
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1 sm:mb-2">
+                  <label className="block text-sm font-medium text-gray-700 mb-1 lg:mb-2">
                     {language === 'en' ? 'Email Address' : 'البريد الإلكتروني'} *
                   </label>
                   <input
@@ -161,15 +161,15 @@ export const Contact = () => {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-colors text-sm sm:text-base"
+                    className="w-full px-3 py-2 sm:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-colors text-sm"
                     placeholder="your@email.com"
                   />
                 </div>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6">
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1 sm:mb-2">
+                  <label className="block text-sm font-medium text-gray-700 mb-1 lg:mb-2">
                     {language === 'en' ? 'Phone Number' : 'رقم الهاتف'}
                   </label>
                   <input
@@ -177,20 +177,20 @@ export const Contact = () => {
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-colors text-sm sm:text-base"
+                    className="w-full px-3 py-2 sm:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-colors text-sm"
                     placeholder="+966 50 123 4567"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1 sm:mb-2">
+                  <label className="block text-sm font-medium text-gray-700 mb-1 lg:mb-2">
                     {language === 'en' ? 'Subject' : 'الموضوع'}
                   </label>
                   <select
                     name="subject"
                     value={formData.subject}
                     onChange={handleChange}
-                    className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-colors text-sm sm:text-base"
+                    className="w-full px-3 py-2 sm:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-colors text-sm"
                   >
                     <option value="">{language === 'en' ? 'Select Subject' : 'اختر الموضوع'}</option>
                     <option value="safari">{language === 'en' ? 'Safari Tours' : 'جولات السفاري'}</option>
@@ -203,7 +203,7 @@ export const Contact = () => {
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1 sm:mb-2">
+                <label className="block text-sm font-medium text-gray-700 mb-1 lg:mb-2">
                   {language === 'en' ? 'Message' : 'الرسالة'} *
                 </label>
                 <textarea
@@ -212,16 +212,16 @@ export const Contact = () => {
                   onChange={handleChange}
                   required
                   rows={5}
-                  className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-colors resize-none text-sm sm:text-base"
+                  className="w-full px-3 py-2 sm:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-colors resize-none text-sm"
                   placeholder={language === 'en' ? 'Write your message here...' : 'اكتب رسالتك هنا...'}
                 />
               </div>
 
               <button
                 type="submit"
-                className="w-full bg-gradient-to-r from-green-600 to-green-700 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold hover:from-green-700 hover:to-green-800 transition-all transform hover:scale-105 flex items-center justify-center text-sm sm:text-base"
+                className="w-full bg-gradient-to-r from-green-600 to-green-700 text-white px-6 py-3 sm:py-4 rounded-lg font-semibold hover:from-green-700 hover:to-green-800 transition-all transform hover:scale-105 flex items-center justify-center text-sm"
               >
-                <Send className="h-4 w-4 sm:h-5 sm:w-5 mr-2" />
+                <Send className="h-4 w-4 mr-2" />
                 {language === 'en' ? 'Submit' : 'إرسال'}
               </button>
             </form>
@@ -229,25 +229,25 @@ export const Contact = () => {
         </div>
 
         {/* Additional Info */}
-        <div className="mt-12 sm:mt-16 lg:mt-20 bg-black/20 backdrop-blur-sm rounded-2xl p-6 sm:p-8 lg:p-12 text-white text-center">
-          <h2 className="text-2xl sm:text-3xl font-bold mb-3 sm:mb-4">
+        <div className="mt-8 sm:mt-12 lg:mt-16 xl:mt-20 bg-black/20 backdrop-blur-sm rounded-2xl p-4 sm:p-6 lg:p-8 xl:p-12 text-white text-center">
+          <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-3 lg:mb-4">
             {language === 'en' ? 'We Look Forward to Hearing From You!' : 'نتطلع للسماع منك!'}
           </h2>
-          <p className="text-lg sm:text-xl text-gray-200 mb-6 sm:mb-8 max-w-2xl mx-auto px-4">
+          <p className="text-base sm:text-lg lg:text-xl text-gray-200 mb-4 sm:mb-6 lg:mb-8 max-w-2xl mx-auto">
             {language === 'en'
               ? 'Our team of experts is ready to help you plan your dream trip to Kenya. Contact us today and let\'s start making unforgettable memories.'
               : 'فريقنا من الخبراء جاهز لمساعدتك في تخطيط رحلة أحلامك إلى كينيا. تواصل معنا اليوم ودعنا نبدأ في صنع ذكريات لا تُنسى.'}
           </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4">
+          <div className="flex flex-col xs:flex-row justify-center gap-3 sm:gap-4">
             <a
               href="tel:+254712346678"
-              className="bg-yellow-500 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold hover:bg-yellow-600 transition-colors"
+              className="bg-yellow-500 text-white px-4 sm:px-6 lg:px-8 py-2 sm:py-3 lg:py-4 rounded-full text-sm sm:text-base lg:text-lg font-semibold hover:bg-yellow-600 transition-colors"
             >
               {language === 'en' ? 'Call Now' : 'اتصل الآن'}
             </a>
             <a
               href="mailto:info@injaazagency.com"
-              className="border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold hover:bg-white hover:text-green-700 transition-all"
+              className="border-2 border-white text-white px-4 sm:px-6 lg:px-8 py-2 sm:py-3 lg:py-4 rounded-full text-sm sm:text-base lg:text-lg font-semibold hover:bg-white hover:text-green-700 transition-all"
             >
               {language === 'en' ? 'Email Us' : 'راسلنا بالإيميل'}
             </a>

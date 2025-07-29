@@ -57,59 +57,59 @@ export const Tours = () => {
   ];
 
   return (
-    <div className="min-h-screen py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-amber-50 to-green-50">
+    <div className="min-h-screen py-8 sm:py-12 md:py-16 lg:py-20 bg-gradient-to-br from-amber-50 to-green-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-10 sm:mb-12 lg:mb-16">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-green-800 mb-4 sm:mb-6">
+        <div className="text-center mb-8 sm:mb-10 md:mb-12 lg:mb-16">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-green-800 mb-3 sm:mb-4 lg:mb-6">
             {language === 'en' ? 'Tours' : 'الجولات'}
           </h1>
-          <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed px-4">
+          <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             {language === 'en'
               ? 'Discover a wide range of tours designed to suit all tastes and budgets'
               : 'اكتشف تشكيلة واسعة من الجولات السياحية المصممة لتناسب جميع الأذواق والميزانيات'}
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 lg:gap-8">
           {tourCategories.map((tour, index) => (
             <Link
               key={index}
               to={tour.link}
-              className="group bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all transform hover:scale-105"
+              className="group bg-white rounded-xl lg:rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all transform hover:scale-105"
             >
               <div className="relative">
                 <img
                   src={tour.image}
                   alt={tour.title}
-                  className="w-full h-48 sm:h-56 md:h-64 object-cover object-center"
+                  className="w-full h-40 sm:h-48 md:h-56 lg:h-64 object-cover object-center"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-                <div className="absolute top-3 right-3 sm:top-4 sm:right-4">
-                  <div className="bg-white/20 backdrop-blur-sm p-2 sm:p-3 rounded-full">
-                    <tour.icon className="h-5 w-5 sm:h-6 sm:w-6 text-white" />
+                <div className="absolute top-2 right-2 sm:top-3 sm:right-3 lg:top-4 lg:right-4">
+                  <div className="bg-white/20 backdrop-blur-sm p-2 rounded-full">
+                    <tour.icon className="h-4 w-4 sm:h-5 sm:w-5 lg:h-6 lg:w-6 text-white" />
                   </div>
                 </div>
               </div>
               
-              <div className="p-6 sm:p-8">
-                <h3 className="text-xl sm:text-2xl font-bold text-green-800 mb-3 sm:mb-4 group-hover:text-yellow-600 transition-colors">
+              <div className="p-4 sm:p-6 lg:p-8">
+                <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-green-800 mb-2 sm:mb-3 lg:mb-4 group-hover:text-yellow-600 transition-colors">
                   {tour.title}
                 </h3>
-                <p className="text-gray-600 mb-4 sm:mb-6 leading-relaxed text-sm sm:text-base">
+                <p className="text-gray-600 mb-3 sm:mb-4 lg:mb-6 leading-relaxed text-sm lg:text-base">
                   {tour.description}
                 </p>
                 
-                <div className="space-y-2">
+                <div className="space-y-1 sm:space-y-2">
                   {tour.features.map((feature, featureIndex) => (
-                    <div key={featureIndex} className="flex items-center text-xs sm:text-sm text-gray-500">
+                    <div key={featureIndex} className="flex items-center text-xs lg:text-sm text-gray-500">
                       <div className="w-2 h-2 bg-yellow-400 rounded-full ml-3 mr-2"></div>
                       {feature}
                     </div>
                   ))}
                 </div>
                 
-                <div className="mt-4 sm:mt-6 pt-3 sm:pt-4 border-t border-gray-200">
-                  <span className="text-yellow-600 font-semibold group-hover:text-green-600 transition-colors text-sm sm:text-base">
+                <div className="mt-3 sm:mt-4 lg:mt-6 pt-3 lg:pt-4 border-t border-gray-200">
+                  <span className="text-yellow-600 font-semibold group-hover:text-green-600 transition-colors text-sm lg:text-base">
                     {language === 'en' ? 'Explore More →' : 'استكشف المزيد ←'}
                   </span>
                 </div>
@@ -119,25 +119,25 @@ export const Tours = () => {
         </div>
 
         {/* Call to Action */}
-        <div className="mt-12 sm:mt-16 lg:mt-20 text-center bg-gradient-to-r from-green-600 to-green-700 rounded-2xl p-6 sm:p-8 lg:p-12 text-white">
-          <h2 className="text-2xl sm:text-3xl font-bold mb-3 sm:mb-4">
+        <div className="mt-8 sm:mt-12 md:mt-16 lg:mt-20 text-center bg-gradient-to-r from-green-600 to-green-700 rounded-xl lg:rounded-2xl p-4 sm:p-6 lg:p-8 xl:p-12 text-white">
+          <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-3 lg:mb-4">
             {language === 'en' ? 'Can\'t find what you\'re looking for?' : 'لا تجد ما تبحث عنه؟'}
           </h2>
-          <p className="text-lg sm:text-xl mb-6 sm:mb-8 text-green-100 px-4">
+          <p className="text-base sm:text-lg lg:text-xl mb-4 sm:mb-6 lg:mb-8 text-green-100">
             {language === 'en'
               ? 'Let us help you design the perfect trip for your needs'
               : 'دعنا نساعدك في تصميم الرحلة المثالية حسب احتياجاتك'}
           </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4">
+          <div className="flex flex-col xs:flex-row justify-center gap-3 sm:gap-4">
             <Link
               to="/request-quote"
-              className="bg-yellow-500 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold hover:bg-yellow-600 transition-colors"
+              className="bg-yellow-500 text-white px-4 sm:px-6 lg:px-8 py-2 sm:py-3 lg:py-4 rounded-full text-sm sm:text-base lg:text-lg font-semibold hover:bg-yellow-600 transition-colors"
             >
               {language === 'en' ? 'Request a Quote' : 'طلب عرض سعر'}
             </Link>
             <Link
               to="/contact"
-              className="border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold hover:bg-white hover:text-green-700 transition-all"
+              className="border-2 border-white text-white px-4 sm:px-6 lg:px-8 py-2 sm:py-3 lg:py-4 rounded-full text-sm sm:text-base lg:text-lg font-semibold hover:bg-white hover:text-green-700 transition-all"
             >
               {language === 'en' ? 'Contact Us' : 'اتصل بنا'}
             </Link>

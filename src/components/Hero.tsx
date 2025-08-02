@@ -10,7 +10,7 @@ export const Hero = () => {
       <img
         src="/Cheetah Running Home page. Hero section.jpg"
         alt="Cheetah running in the African savanna"
-        className="absolute z-0 w-full h-full object-cover"
+        className="absolute z-0 w-full h-full object-cover object-[center_30%] sm:object-center"
       />
       <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent" />
       {/* Brightness overlay to make the image appear brighter */}
